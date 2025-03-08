@@ -1,0 +1,58 @@
+/* General Reset */
+body {
+    margin: 0;
+    font-family: Lato, sans-serif;
+    background: linear-gradient(45deg, #ff7eb3, #ff758c, #fdb95e); /* Matching Home Page Gradient */
+    color: black; /* White text for better contrast */
+}
+
+
+/* About Us Section */
+.about-us {
+    max-width: 800px;
+    margin: 50px auto;
+    background: rgba(255, 255, 255, 0.2); /* Transparent White for readability */
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Headings */
+.about-us h1,
+.about-us h2 {
+    color: #fff; /* White text */
+    font-weight: bold;
+}
+
+/* Paragraphs */
+.about-us p {
+    font-size: 18px;
+    color: white; /* Ensure readability */
+    line-height: 1.6;
+}
+
+/* List Styling */
+.about-us ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.about-us ul li {
+    font-size: 18px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.3);
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

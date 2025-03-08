@@ -1,0 +1,95 @@
+/* Set background color same as Home page */
+body {
+    margin: 0;
+    font-family: Lato, sans-serif;
+    background-color: #f8f9fa; /* Light grey background */
+}
+
+/* Showtime Section */
+.showtime-section {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(45deg, #ff7eb3, #ff758c, #fdb95e); /* Matching Home Page gradient */
+    color: white;
+}
+
+.showtime-section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+/* Movie Container - Flexbox for 2 or 3 posters in a row */
+.showtime-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px; /* Space between movie cards */
+    padding: 20px;
+}
+
+/* Movie Card - Each poster */
+.movie-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px; /* Ensures proper size */
+    text-align: center;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Movie Poster */
+.movie-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Showtime text */
+.movie-card p {
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+}
+
+/* Fix Buy Ticket Button */
+.buy-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background: red;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-top: 10px; /* Ensure space between text and button */
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s;
+    width: 80%; /* Make button width consistent */
+    text-align: center;
+}
+
+.buy-btn:hover {
+    background: darkred;
+}
+
+/* Ensure button is properly placed */
+.movie-card .buy-btn {
+    display: block;
+    position: relative;
+    bottom: 0;
+}
+
+/* Responsive - Adjust for smaller screens */
+@media (max-width: 768px) {
+    .showtime-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .movie-card {
+        width: 90%; /* Full width for mobile screens */
+    }
+}

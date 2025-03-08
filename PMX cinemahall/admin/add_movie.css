@@ -1,0 +1,67 @@
+/* Center the form */
+.admin-dashboard {
+    width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #ffffff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Title */
+.admin-dashboard h1 {
+    margin-bottom: 20px;
+    font-size: 22px;
+    color: #333;
+}
+
+/* Input fields */
+.admin-dashboard input,
+.admin-dashboard textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Textarea */
+.admin-dashboard textarea {
+    height: 80px;
+    resize: none;
+}
+
+/* Submit button */
+.admin-dashboard button {
+    width: 100%;
+    padding: 10px;
+    background: #ff758c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.admin-dashboard button:hover {
+    background: #ff5e75;
+}
+
+/* Back button */
+.dashboard-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 8px 15px;
+    background: #ddd;
+    color: #333;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.dashboard-btn:hover {
+    background: #bbb;
+}

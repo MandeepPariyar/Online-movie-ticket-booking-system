@@ -1,0 +1,233 @@
+/* ===== Global Reset ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(45deg, #ff7eb3, #ff758c, #fdb95e); /* Your Gradient Background */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8); /* Semi-transparent black */
+    padding: 15px 50px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+    margin-bottom: 30px;
+    animation: fadeInDown 1s ease;
+}
+
+.logo img {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.logo span {
+    font-size: 28px;
+    font-weight: bold;
+    color: #fff;
+    letter-spacing: 2px;
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8);
+}
+
+.menu a {
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+    color: #ff758c;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.menu a:hover, .menu a.home {
+    color: #fdb95e;
+    text-shadow: 0px 0px 10px rgba(253, 185, 94, 0.8);
+}
+
+.logreg {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logreg span {
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.logreg a {
+    padding: 8px 20px;
+    border: 2px solid #fdb95e;
+    color: #fdb95e;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.logreg a:hover {
+    background: #fdb95e;
+    color: #fff;
+}
+
+/* ===== Slideshow ===== */
+.slideshow-container {
+    width: 100%;
+    max-width: 900px;
+    height: 400px;
+    overflow: hidden;
+    margin-bottom: 50px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.7);
+    animation: fadeIn 2s ease-in-out;
+}
+
+.slide img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.fade {
+    animation: fadeEffect 3s ease;
+}
+
+@keyframes fadeEffect {
+    from { opacity: 0.4 }
+    to { opacity: 1 }
+}
+
+/* ===== Now Showing Section ===== */
+.now-showing {
+    width: 100%;
+    max-width: 1000px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.now-showing h2 {
+    font-size: 32px;
+    color: #fff;
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8);
+    margin-bottom: 20px;
+    animation: fadeInUp 1.5s ease;
+}
+
+.date-navigation button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    background: #ff758c;
+    border: none;
+    color: #fff;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
+}
+
+.date-navigation button.active {
+    background: #fdb95e;
+}
+
+.date-navigation button:hover {
+    background: #ff7eb3;
+}
+
+/* ===== Movie List ===== */
+.movie-list {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.movie-card {
+    width: 300px;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.6);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.movie-card:hover {
+    transform: scale(1.05);
+}
+
+.movie-poster {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    object-fit: cover;
+}
+
+.movie-card p {
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.buy-ticket button {
+    padding: 10px 20px;
+    background: #ff758c;
+    border: none;
+    color: #fff;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.buy-ticket button:hover {
+    background: #fdb95e;
+}
+
+footer {
+    margin-top: auto;
+    text-align: center;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    border-radius: 10px;
+    width: 100%;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+}
+
+footer p {
+    margin: 0;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+    from { transform: translateY(50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes fadeInDown {
+    from { transform: translateY(-50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+.seat:hover {
+    background: orange;
+}
